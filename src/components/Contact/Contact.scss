@@ -1,0 +1,85 @@
+/* 
+  This file is kept for reference but is no longer used directly.
+  The Contact component now uses the Page component styling.
+  
+  If you need to add custom styling for the contact page, you can add it here
+  and then import it in the Contact component.
+*/
+
+.contact-container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  color: #ffffff;
+  background-color: transparent;
+  
+  &.light {
+    color: #000000;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-bottom: 3rem;
+    font-weight: 600;
+  }
+
+  .contact-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  .contact-item {
+    h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+
+    .contact-link {
+      color: inherit;
+      text-decoration: none;
+      font-size: 1.1rem;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+
+    .social-links {
+      display: flex;
+      gap: 2rem;
+
+      a {
+        position: relative;
+        
+        &::after {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 0;
+          height: 1px;
+          background-color: currentColor;
+          transition: width 0.3s ease;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+    }
+
+    p {
+      font-size: 1.1rem;
+      margin: 0;
+    }
+  }
+} 

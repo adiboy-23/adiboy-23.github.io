@@ -123,6 +123,27 @@ const Menu = () => {
               />
             </svg>
           </NavLink>
+          <NavLink to="/contact">
+            <svg
+              width="15"
+              height="15"
+              viewBox="0 0 15 15"
+              fill="none"
+              className={`contact-button ${buttonClassNames}`}
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M1 3.5C1 2.11929 2.11929 1 3.5 1H11.5C12.8807 1 14 2.11929 14 3.5V11.5C14 12.8807 12.8807 14 11.5 14H3.5C2.11929 14 1 12.8807 1 11.5V3.5Z"
+                stroke="currentColor"
+                strokeWidth="0.6"
+              />
+              <path
+                d="M1 4L7.5 8L14 4"
+                stroke="currentColor"
+                strokeWidth="0.6"
+              />
+            </svg>
+          </NavLink>
         </div>
       </nav>
     </>
